@@ -32,6 +32,8 @@
 		552E27E929CE194400626F17 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552E27E829CE194400626F17 /* AnimalGridItemView.swift */; };
 		552E27EF29CE237E00626F17 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552E27EE29CE237E00626F17 /* Stickers.xcassets */; };
 		552E27F329CE237E00626F17 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 552E27EC29CE237D00626F17 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		552E27F929CE26C700626F17 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552E27F829CE26C700626F17 /* CreditsView.swift */; };
+		552E27FC29CE277100626F17 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552E27FB29CE277100626F17 /* CenterModifier.swift */; };
 		55388C7229CC223400814510 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55388C7129CC223400814510 /* CoverImageView.swift */; };
 		55388C7529CC2ED800814510 /* CoverImageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55388C7429CC2ED800814510 /* CoverImageModels.swift */; };
 		55388C7829CC308100814510 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55388C7729CC308100814510 /* CodableBundleExtension.swift */; };
@@ -105,6 +107,8 @@
 		552E27EC29CE237D00626F17 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		552E27EE29CE237E00626F17 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		552E27F029CE237E00626F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		552E27F829CE26C700626F17 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		552E27FB29CE277100626F17 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 		55388C7129CC223400814510 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		55388C7429CC2ED800814510 /* CoverImageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModels.swift; sourceTree = "<group>"; };
 		55388C7729CC308100814510 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		552CB75A29CADFDC00824A5A /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				552E27FA29CE276000626F17 /* Modifiers */,
 				55388C8F29CCD02500814510 /* Utilities */,
 				55388C7629CC307800814510 /* Extensions */,
 				55388C7329CC2EC900814510 /* Models */,
@@ -229,6 +234,14 @@
 			path = Stickers;
 			sourceTree = "<group>";
 		};
+		552E27FA29CE276000626F17 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				552E27FB29CE277100626F17 /* CenterModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		55388C7029CC222200814510 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +258,7 @@
 				55388C9429CCDBCB00814510 /* MapAnnotationView.swift */,
 				55388C9629CDC08300814510 /* MotionAnimationView.swift */,
 				552E27E829CE194400626F17 /* AnimalGridItemView.swift */,
+				552E27F829CE26C700626F17 /* CreditsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -410,8 +424,10 @@
 				552E27E929CE194400626F17 /* AnimalGridItemView.swift in Sources */,
 				55388C7529CC2ED800814510 /* CoverImageModels.swift in Sources */,
 				55388C8229CC972300814510 /* InsetGalleryView.swift in Sources */,
+				552E27F929CE26C700626F17 /* CreditsView.swift in Sources */,
 				55388C7829CC308100814510 /* CodableBundleExtension.swift in Sources */,
 				55388C9729CDC08300814510 /* MotionAnimationView.swift in Sources */,
+				552E27FC29CE277100626F17 /* CenterModifier.swift in Sources */,
 				55388C8029CC95C500814510 /* HeadingView.swift in Sources */,
 				55388C8E29CCCF5200814510 /* VideoPlayerView.swift in Sources */,
 			);
@@ -557,6 +573,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -587,6 +604,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -50,6 +50,9 @@ struct ContentView: View {
                                 AnimalListItemView(animal: animal)
                             } //: NavigationLink
                         }
+                        
+                        CreditsView()
+                            .modifier(CenterModifier())
                     } //: List
                     .listStyle(.plain)
                 } else {
